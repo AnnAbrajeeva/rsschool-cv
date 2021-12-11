@@ -46,17 +46,22 @@ computed: {
       this.$store.dispatch("cart/deleteProductFromCart", id);
     },
   } 
-  ```
+  ```   
   
-   ## Education
+  
+## Education  
+   
 | ***Year***  | ***Education*** |
 | ------------- | ------------- |
 | October 2020 - March 2021  | ___IT-School "Wepro", Front-end developer___  |
-| 2005-2009  | ___National University of Uzbekistan, sociology___  |
+| 2005-2009  | ___National University of Uzbekistan, sociology___  |  
+
 
  
 
-  ## English
+## English  
+  
 
-  A2 - Pre-intermediate
+  A2 - Pre-intermediate  
+  
 
