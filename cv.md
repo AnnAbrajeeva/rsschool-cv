@@ -10,3 +10,9 @@ __Discord:__ AnnaAbrajeeva#2376 (@AnnAbrajeeva)
 I'm junior Front-end Developer in web studio. Mostly I create Wordpress websites and a little with VueJS.  
 
 I want to improve my skills and continue to evolve in this area.
+
+## Skills
+
+* HTML, CSS, JS
+* Wordpress
+* VueJS
