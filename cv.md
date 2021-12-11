@@ -16,3 +16,34 @@ I want to improve my skills and continue to evolve in this area.
 * HTML, CSS, JS
 * Wordpress
 * VueJS
+
+## Code example
+
+```javascript
+computed: {
+    ...mapGetters("cart", ["getCart"]),
+    getTotalPrice() {
+      if (this.getCart.length) {
+        let result = [];
+        this.getCart.map((product) => {
+          result.push(product.quantity * product.cost);
+        });
+        result = result.reduce((sum, el) => sum + el);
+        return result;
+      } else {
+        return 0
+      }
+    },
+  },
+  methods: {
+    changeQuantity(value, id) {
+      this.$store.dispatch("cart/changeQuantityInCart", {
+        value: value,
+        id: id,
+      });
+    },
+    delFromCart(id) {
+      this.$store.dispatch("cart/deleteProductFromCart", id);
+    },
+  } 
+  ```
