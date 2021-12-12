@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+a {
+    color: black;
+    text-decoration: none;
+}
+
 .container {
     max-width: 1440px;
     padding: 0 15px;
@@ -35,9 +40,17 @@
 }
 
 .profile {
-    padding: 20px 20px;
+    padding: 20px 0;
     background-color: black;
     color: white;
+}
+
+.profile-wrapper {
+    padding: 0 30px;
+}
+
+.profile-title {
+    margin-bottom: 20px;
 }
 
 .profile-foto-wrapper {
@@ -91,7 +104,7 @@
 }
 
 .promo-title h1 {
-    font-size: 100px;
+    font-size: 70px;
     text-transform: uppercase;
     margin-bottom: 40px;
 }
@@ -100,7 +113,8 @@
     padding: 10px 20px;
     background-color: black;
     color: white;
-    font-size: 20px;
+    font-size: 15px;
+    text-transform: uppercase;
 }
 
 .promo-bcg {
@@ -109,4 +123,29 @@
     height: 100%;
     left: 0;
     top: 0;
+}
+
+.contacts-wrapper {
+    margin-top: 40px;
+    background-color: #C89175;
+    padding: 20px 30px;
+}
+
+.constacts-list {
+    list-style: none;
+    /* margin: 30px; */
+    color: black;
+}
+
+.contacts-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 20px;
+}
+
+.contacts-list-item {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    margin-bottom: 20px;
 }
