@@ -1,1 +1,112 @@
-/* Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1440px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.header {
+    background-color: black;
+    padding: 20px 0;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    list-style: none;
+}
+
+.main {
+    display: flex;
+}
+
+.cv-aside {
+    width: 30%;
+}
+
+.main-block {
+    width: 70%;
+}
+
+.profile {
+    padding: 20px 20px;
+    background-color: black;
+    color: white;
+}
+
+.profile-foto-wrapper {
+    max-width: 400px;
+    max-height: 400px;
+    position: relative;
+    margin-top: 20px;
+    margin: 50px 20px 50px 0px
+}
+
+.profile-foto {
+    width: 100%;
+    height: 300px;    
+}
+
+.profile-foto img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    z-index: 5;
+    position: absolute;
+}
+
+.profile-foto:after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: #C89175;
+    position: absolute;
+    top: -30px;
+    left: 30px;
+    z-index: 1;
+}
+
+.promo {
+    background-color: #C89175;
+    position: relative;
+    padding: 100px 0;
+    display: flex;
+}
+
+.promo-bcg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.05;
+}
+
+.promo-title {
+  margin: 0 auto;
+}
+
+.promo-title h1 {
+    font-size: 100px;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+
+.promo-title span {
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    font-size: 20px;
+}
+
+.promo-bcg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+}
