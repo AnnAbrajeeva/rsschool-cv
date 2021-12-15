@@ -192,6 +192,8 @@ a {
 .section-title {
     position: relative;
     margin-top: 50px;
+    overflow: hidden;
+    padding: 15px 0;
 }
 
 .section-title h2 {
@@ -206,7 +208,7 @@ a {
 .section-title h2:after {
     content: '';
     position: absolute;
-    width: 70%;
+    width: 100%;
     height: 5px;
     background-color: black;
     top: 50%;
@@ -235,3 +237,19 @@ a {
 .education-item {
     margin-top: 30px;
 }
+
+.hljs {
+    display: block;
+    overflow-x: auto;
+    padding: 0.5em;
+  }
+
+.hljs,
+.hljs-subst {
+  color: black;
+}
+
+.code-wrapper code {
+    color: white;
+}
+

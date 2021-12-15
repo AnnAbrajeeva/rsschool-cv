@@ -10,6 +10,8 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap"
         rel="stylesheet">
+        <link rel="stylesheet"
+        href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/styles/devibeans.min.css">
     <link rel="stylesheet" href="./style.css">
     <title>CV</title>
 </head>
@@ -54,20 +56,36 @@
                                     <h3 class="education-title">IT-School "Wepro"</h3>
                                     <p class="education-descr">Front-end developer</p>
                                     <p class="education-date">October 2020 - March 2021</p>
-                                </div>  
-                            </li> 
-                                
+                                </div>
+                            </li>
+
                             <li class="education-item">
                                 <div>
                                     <h3 class="education-title">National University of Uzbekistan</h3>
                                     <p class="education-descr">sociology</p>
                                     <p class="education-date">2005-2009</p>
-                                </div>   
+                                </div>
                             </li>
                         </ul>
-                    </div>       
+                        <div class="section-title">
+                            <h2>Code example</h2>
+                        </div>
+                        <div class="code-wrapper">
+                            <pre><code class="language-javascript">
+                            let rotateMatrix = arr =&gt; {
+                                let myArr = []
+                                    for(let i = arr[0].length-1; i&gt;=0; i--) {
+                                      let arr1 = []
+                                    for(let j=arr.length-1; j&gt;=0; j--) {
+                                      arr1.unshift(arr[j][i])     
+                                    }
+                                  myArr.push(arr1)
+                                }
+                                return myArr
+                            }</code></pre>
+                        </div>
+                    </div>
                 </div>
-              
             </section>
         </div>
 
@@ -158,7 +176,8 @@
 
     </main>
 
-
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/highlight.min.js"></script>
+    <script src="./script.js"></script>
 </body>
 
 </html>
