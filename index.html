@@ -1,12 +1,282 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/styles/devibeans.min.css">
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="./assets/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="./assets/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="./assets/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./assets/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="./assets/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="./assets/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="./assets/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="./assets/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="./assets/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="./assets/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="./assets/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="./style.css">
+    <title>CV</title>
 </head>
+
 <body>
-    
+    <header class="header">
+        <div class="container">
+            <div class="burger-menu">
+                <span></span>
+            </div>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li class="nav-item"><a class="nav-link" href="#profile">Profile</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#Skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#Code">Code example</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#Education">Education</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#Projects">My projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#English">English</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="promo-hidden">
+        <div class="promo-bcg">
+            <img src="./assets/img/388258.png" alt="bird">
+        </div>
+        <div class="promo-title">
+            <h1>Anna<br> Abrajeeva</h1>
+            <span>junior front-end developer</span>
+        </div>
+    </section>
+
+    <main class="main">
+        <div class="container">
+            <div class="wrapper">
+
+
+                <div class="main-block">
+                    <section class="promo">
+                        <div class="promo-bcg">
+                            <img src="./assets/img/388258.png" alt="bird">
+                        </div>
+                        <div class="promo-title">
+                            <h1>Anna<br> Abrajeeva</h1>
+                            <span>junior front-end developer</span>
+                        </div>
+                    </section>
+
+                    <section class="cv-main">
+                        <div class="container">
+                            <div class="section-wrapper">
+                                <div id="Education" class="section-title">
+                                    <h2>Education</h2>
+                                </div>
+                                <ul class="education-list">
+                                    <li class="education-item">
+                                        <div>
+                                            <h3 class="education-title">IT-School "Wepro"</h3>
+                                            <p class="education-descr">Front-end developer</p>
+                                            <p class="education-date">October 2020 - March 2021</p>
+                                        </div>
+                                    </li>
+
+                                    <li class="education-item">
+                                        <div>
+                                            <h3 class="education-title">National University of Uzbekistan</h3>
+                                            <p class="education-descr">sociology</p>
+                                            <p class="education-date">2005-2009</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <div id="Code" class="section-title">
+                                    <h2>Code example</h2>
+                                </div>
+                                <div class="code-wrapper">
+                                    <pre><code class="language-javascript">
+    let rotateMatrix = arr =&gt; {
+        let myArr = []
+            for(let i = arr[0].length-1; i&gt;=0; i--) {
+                let arr1 = []
+            for(let j=arr.length-1; j&gt;=0; j--) {
+                arr1.unshift(arr[j][i])     
+            }
+            myArr.push(arr1)
+        }
+        return myArr
+    }</code></pre>
+                                </div>
+
+                                <div id="Projects" class="section-title">
+                                    <h2>My Projects</h2>
+                                </div>
+
+                                <div class="projects">
+                                    <div class="project">
+                                        <a href="https://brave-kare-9efe0c.netlify.app/">
+                                            <div class="project-wrapper">
+                                                <img src="./assets/img/admin-doors-foto.png" alt="Admin panel">
+                                                <div class="hover-block">
+                                                    <p><strong>HTML, CSS, JS, VUEJS</strong></p>
+                                                </div>
+                                            </div>
+                                        </a>
+
+                                        <p class="project-descr">
+                                            Admin panel for sale of the doors.
+                                            (Login: admin, password: admin)
+                                        </p>
+                                    </div>
+
+                                    <div class="project">
+                                        <a href="https://github.com/AnnAbrajeeva/Shopper">
+                                            <div class="project-wrapper">
+                                                <img src="./assets/img/photo_2021-12-17_21-29-37.jpg" alt="Shopper">
+                                                <div class="hover-block">
+                                                    <p><strong>HTML, CSS, JS, NUXT, Firebase</strong></p>
+                                                </div>
+                                            </div>
+                                        </a>
+
+                                        <p class="project-descr">
+                                            Online store with admin panel.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div id="English" class="section-title">
+                                    <h2>English</h2>
+                                </div>
+
+                                <div class="english-section">
+                                    English level - A2
+                                    <br>
+                                    <a class="english-link" href="https://www.efset.org/cert/CtS189">EF SET
+                                        Certificate</a>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+
+                <aside class="cv-aside">
+                    <section id="Profile" class="profile">
+                        <div class="profile-wrapper">
+                            <div class="profile-foto-wrapper">
+                                <div class="profile-foto">
+                                    <img src="./assets/img/foto-color.jpg" alt="Anna">
+                                </div>
+                            </div>
+
+
+                            <h2 class="profile-title">My Profile</h2>
+                            <p class="profile-descr">I'm junior Front-end Developer in web studio. Mostly I create
+                                Wordpress
+                                websites and a little with VueJS. I want to improve my skills and continue to evolve in
+                                this
+                                area.
+                            </p>
+                        </div>
+                        <div class="contacts-wrapper">
+                            <ul class="constacts-list">
+                                <li class="contacts-list-item">
+
+                                    <img class="contacts-icon" src="./assets/img/email.png" alt="email icon">
+                                    <a href="mailto:anuta040786@yandex.ru">
+                                        <span>anuta040786@yandex.ru</span>
+                                    </a>
+                                </li>
+                                <li class="contacts-list-item">
+                                    <img class="contacts-icon" src="./assets/img/phone-call.png" alt="phone icon">
+                                    <span>+998 (91) 536-12-96</span>
+                                </li>
+                                <li class="contacts-list-item">
+
+                                    <img class="contacts-icon" src="./assets/img/github.png" alt="github icon">
+                                    <a href="https://github.com/AnnAbrajeeva">
+                                        <span>AnnAbrajeeva</span>
+                                    </a>
+                                </li>
+                                <li class="contacts-list-item">
+                                    <img class="contacts-icon" src="./assets/img/discord.png" alt="discord icon">
+                                    <span>AnnaAbrajeeva#2376 (@AnnAbrajeeva)</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </section>
+
+                    <section id="Skills" class="skills">
+                        <div class="container">
+                            <h2 class="skills-title">Skills</h2>
+                            <ul class="skills-list">
+                                <li class="skills-list-item">
+                                    <div class="skills-icon-wrapper">
+                                        <img class="skills-list-icon" src="./assets/img/html.png" alt="HTML icon">
+                                    </div>
+                                    HTML 5
+                                </li>
+                                <li class="skills-list-item">
+                                    <div class="skills-icon-wrapper">
+                                        <img class="skills-list-icon" src="./assets/img/css-3.png" alt="CSS icon">
+                                    </div>
+                                    CSS 3
+                                </li>
+                                <li class="skills-list-item">
+                                    <div class="skills-icon-wrapper">
+                                        <img class="skills-list-icon" src="./assets/img/javascript.png" alt="JS icon">
+                                    </div>
+                                    JS
+                                </li>
+                                <li class="skills-list-item">
+                                    <div class="skills-icon-wrapper">
+                                        <img class="skills-list-icon" src="./assets/img/wordpress.png"
+                                            alt="Wordpress icon">
+                                    </div>
+                                    Wordpress
+                                </li>
+                                <li class="skills-list-item">
+                                    <div class="skills-icon-wrapper">
+                                        <img class="skills-list-icon" src="./assets/img/icons8-vue-js-48.png"
+                                            alt="Wordpress icon">
+                                    </div>
+                                    VueJS
+                                </li>
+                            </ul>
+                        </div>
+                    </section>
+                </aside>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-wrapper">
+                <a href="https://rs.school/js/" class="logo">
+                    <img src="https://rs.school/images/rs_school_js.svg" alt="RS School logo">
+                </a>
+                <p>2021</p>
+                <a href="https://github.com/AnnAbrajeeva" class="github">
+                    <img src="./assets/img/github.png" alt="github icon">
+                    <p>AnnAbrajeeva</p>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/highlight.min.js"></script>
+    <script src="./script.js"></script>
 </body>
+
 </html>
