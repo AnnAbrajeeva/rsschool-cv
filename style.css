@@ -25,8 +25,11 @@ a {
 
 .container {
     max-width: 1440px;
-    padding: 0 15px;
     margin: 0 auto;
+}
+
+.wrapper {
+    display: flex;
 }
 
 .header {
@@ -69,6 +72,10 @@ a {
     width: 30%;
 }
 
+.cv-main {
+    padding: 0 15px;
+}
+
 .main-block {
     width: 70%;
 }
@@ -85,6 +92,7 @@ a {
 
 .profile-title {
     margin-bottom: 20px;
+    color: #C89175;
 }
 
 .profile-foto-wrapper {
@@ -282,6 +290,7 @@ a {
 }
 
 .code-wrapper code {
+    margin-top: 20px;
     color: white;
 }
 
@@ -289,6 +298,7 @@ a {
     margin-top: 20px;
     display: flex;
     flex-wrap: wrap;
+    padding: 0 15px;
 }
 
 .project {
@@ -297,6 +307,7 @@ a {
     flex-direction: column;
     max-width: 300px;
     margin-right: 40px;
+    margin-top: 20px;
 }
 
 .project-descr {
@@ -306,6 +317,11 @@ a {
 .project:hover .hover-block{
     opacity: 1;
     top: 0;
+}
+
+.english-section {
+    margin-top: 20px;
+    padding: 0 15px;
 }
 
 .hover-block {
@@ -410,6 +426,9 @@ a {
     .main {
         flex-direction: column;
     }
+    .wrapper {
+            flex-direction: column;
+    }
 }  
 
 @media (max-width: 767px) {
@@ -426,6 +445,7 @@ a {
         height: 30px;
         width: 30px;
         position: relative;
+        margin-left: 15px;
     }
 
     .burger-menu span,
