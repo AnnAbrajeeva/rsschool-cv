@@ -10,8 +10,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap"
         rel="stylesheet">
-        <link rel="stylesheet"
-        href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/styles/devibeans.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/styles/devibeans.min.css">
     <link rel="stylesheet" href="./style.css">
     <title>CV</title>
 </head>
@@ -21,16 +20,26 @@
         <div class="container">
             <nav class="nav">
                 <ul class="nav-list">
-                    <li class="nav-item">Profile</li>
-                    <li class="nav-item">Skills</li>
-                    <li class="nav-item">Code example</li>
-                    <li class="nav-item">Education</li>
-                    <li class="nav-item">Certificates</li>
-                    <li class="nav-item">English</li>
+                    <li class="nav-item"><a class="nav-link" href="#profile">Profile</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#Skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#Code">Code example</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#Education">Education</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#Projects">My projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#English">English</a></li>
                 </ul>
             </nav>
         </div>
     </header>
+
+    <section class="promo-hidden">
+        <div class="promo-bcg">
+            <img src="./assets/img/388258.png" alt="">
+        </div>
+        <div class="promo-title">
+            <h1>Anna<br> Abrajeeva</h1>
+            <span>junior front-end developer</span>
+        </div>
+    </section>
 
     <main class="main">
         <div class="main-block">
@@ -47,7 +56,7 @@
             <section class="cv-main">
                 <div class="container">
                     <div class="section-wrapper">
-                        <div class="section-title">
+                        <div id="Education" class="section-title">
                             <h2>Education</h2>
                         </div>
                         <ul class="education-list">
@@ -67,22 +76,48 @@
                                 </div>
                             </li>
                         </ul>
-                        <div class="section-title">
+                        <div id="Code" class="section-title">
                             <h2>Code example</h2>
                         </div>
                         <div class="code-wrapper">
-                            <pre><code class="language-javascript">
-                            let rotateMatrix = arr =&gt; {
-                                let myArr = []
-                                    for(let i = arr[0].length-1; i&gt;=0; i--) {
-                                      let arr1 = []
-                                    for(let j=arr.length-1; j&gt;=0; j--) {
-                                      arr1.unshift(arr[j][i])     
-                                    }
-                                  myArr.push(arr1)
-                                }
-                                return myArr
-                            }</code></pre>
+    <pre><code class="language-javascript">
+    let rotateMatrix = arr =&gt; {
+        let myArr = []
+            for(let i = arr[0].length-1; i&gt;=0; i--) {
+                let arr1 = []
+            for(let j=arr.length-1; j&gt;=0; j--) {
+                arr1.unshift(arr[j][i])     
+            }
+            myArr.push(arr1)
+        }
+        return myArr
+    }</code></pre>
+                        </div>
+
+                        <div id="Projects" class="section-title">
+                            <h2>My Projects</h2>
+                        </div>
+
+                        <div class="projects">
+                            <div class="project">
+                                <a href="https://brave-kare-9efe0c.netlify.app/">
+                                    <div class="project-wrapper">
+                                        <img src="./assets/img/admin-doors-foto.png" alt="Admin panel">
+                                        <div class="hover-block">
+                                            <p><strong>HTML, CSS, JS, VUEJS</strong></p>
+                                        </div>
+                                    </div>
+                                </a>
+
+                                <p class="project-descr">
+                                    Admin panel for sale of the doors.
+                                    (Login: admin, password: admin)
+                                </p>
+                            </div>
+                        </div>
+
+                        <div id="English" class="section-title">
+                            <h2>English</h2>
                         </div>
                     </div>
                 </div>
@@ -90,11 +125,11 @@
         </div>
 
         <aside class="cv-aside">
-            <section class="profile">
+            <section id="Profile" class="profile">
                 <div class="profile-wrapper">
                     <div class="profile-foto-wrapper">
                         <div class="profile-foto">
-                            <img src="https://i.mycdn.me/i?r=AyH4iRPQ2q0otWIFepML2LxREs-EK2rTJOQjQClp073fiQ" alt="Anna">
+                            <img src="./assets/img/foto-color.jpg" alt="Anna">
                         </div>
                     </div>
 
@@ -133,7 +168,7 @@
                 </div>
             </section>
 
-            <section class="skills">
+            <section id="Skills" class="skills">
                 <div class="container">
                     <h2 class="skills-title">Skills</h2>
                     <ul class="skills-list">
@@ -172,9 +207,22 @@
                 </div>
             </section>
         </aside>
-
-
     </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-wrapper">
+                <a href="https://rs.school/js/" class="logo">
+                    <img src="https://rs.school/images/rs_school_js.svg" alt="RS School logo">
+                </a>
+                <p>2021</p>
+                <a href="https://github.com/AnnAbrajeeva" class="github">
+                    <img src="./assets/img/github.png" alt="github icon">
+                    <p>AnnAbrajeeva</p>
+                </a>
+            </div> 
+        </div>
+    </footer>
 
     <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/highlight.min.js"></script>
     <script src="./script.js"></script>
